@@ -1,0 +1,31 @@
+using System;
+delegate void Message();
+class Mesg
+{
+    public void Wel()
+    {
+        Console.WriteLine("Welcome Students");
+    }
+    public void Hello()
+    {
+        Console.WriteLine("Learing c# delegates");
+    }
+    public void Th()
+    {
+        Console.WriteLine("Thank you");
+    }
+}
+public class Program
+{
+    static void Main(string[] args)
+    {
+        Mesg m = new Mesg();
+        Message obj;
+
+        obj= m.Wel;
+        obj += m.Hello;
+        obj += m.Th;
+        obj();
+        Console.WriteLine("Bhavesh T039");
+    }
+}
