@@ -1,0 +1,30 @@
+using System;
+class Bankacc
+{
+    public int Accnum { get; set;  }
+    private double balance;
+    public double Balance
+    {
+        get { return balance; }
+        set { if (value >= 0)
+                balance = value;
+            else
+                Console.WriteLine("Balance cannot be negative");
+        }
+
+    }
+    
+}
+class Program
+{
+    static void Main()
+    {
+        Bankacc b = new Bankacc();
+        b.Accnum = 100;
+        b.Balance = 5000;
+        Console.WriteLine("Account number:"+b.Accnum);
+        Console.WriteLine("Balance: "+b.Balance);
+
+        b.Balance = -1000;
+    }
+}
