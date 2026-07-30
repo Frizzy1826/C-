@@ -1,0 +1,22 @@
+Manifest.json:
+{
+  "name": "HTML to PWA",
+  "short_name": "HTP",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "icons/animal (1).png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+      
+    },
+    {
+      "src": "icons/animal.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
